@@ -34,7 +34,49 @@
     font-display: swap;
 }
 
+:root {
+    --main-color: #00AEB9;
+    --secondary-color: #DAE8EC;
+    --title-color: #3C4859;
+    --subtitle-color: #9D9D9D;
+    --text-color: #091833;
+
+
+    --font-size-super: 4.5rem;
+    --font-size-sub-super: 2.5rem;
+
+    --font-size-title: 3.75rem;
+    --font-size-sub-title: 1.75rem;
+
+    --font-size-text: 1.5rem;
+    --font-size-small: 1rem;
+
+
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Poppins', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(-90.13deg, #915eff 1.9%, #ff4ecd 97.5%);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050816;
 }
