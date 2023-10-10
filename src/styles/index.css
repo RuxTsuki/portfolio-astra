@@ -66,6 +66,7 @@
 
 body {
     background-color: white;
+    height: 1200px;
 }
 
 ::-webkit-scrollbar {
