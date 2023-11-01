@@ -1,2 +1,2 @@
-export * from './hero';
+export * from './sections/hero';
 export * from './navbar';

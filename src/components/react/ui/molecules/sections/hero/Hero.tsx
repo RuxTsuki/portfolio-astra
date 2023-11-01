@@ -1,5 +1,5 @@
 import { SectionWrapper } from '@components/react/ui/molecules/HOC'
-import { Navbar } from '../navbar/Navbar'
+import { Navbar } from '../../navbar/Navbar'
 import { motion } from 'framer-motion';
 import ImageHero from '/src/assets/img/imgHero.png';
 import { basePath, itemsMenuIds } from '@components/utils/constant';
