@@ -82,7 +82,7 @@ export const Navbar = () => {
                     </div>
 
                     <MagicCard isCardExpanded={navbar}>
-                        <div className={`${navbar ? "grid" : "hidden"} md:hidden animated fixed z-10 top-0 bottom-0 left-0 right-0`}>
+                        <div className={`${navbar ? "grid" : "hidden"} md:hidden  h-screen animated fixed z-10 top-0 bottom-0 left-0 right-0`}>
                             <div className={`grid items-center bg-[--bg-menu-white] w-full`}>
                                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-center font-medium">
                                     {
