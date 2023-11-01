@@ -3,19 +3,18 @@ import { MenuIcon, CloseIcon } from "../../atoms/icons";
 import { useEffect, useState } from "react";
 /* import { useNavigate } from "react-router-dom"; */
 import { basePath, itemsMenuIds } from "@components/utils/constant";
-import { MagicCard, MagicMotion } from "react-magic-motion";
+import { MagicCard } from "react-magic-motion";
 
 const { about, home, skills, projects, contact } = itemsMenuIds;
 
 export const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     const [sticky, setSticky] = useState(false);
-    /* const navigate = useNavigate();
- */
+
     // on render, set listener
     useEffect(() => {
 
-        if (window.scrollY >= 100)
+        if (window.scrollY >= 80)
             setSticky(true);
 
         const isSticky = () => {
@@ -64,7 +63,7 @@ export const Navbar = () => {
 
     return (
         <div className="relative">
-            <nav className="w-full fixed z-[15]">
+            <nav className={`${sticky ? 'nav-menu ' : ''}w-full fixed z-[15]`}>
                 <div className="relative z-20">
                     <div className="container mx-auto relative z-[21] flex justify-between items-center py-3 px-3">
                         <a className="w-[60px] h-[60px]">
