@@ -1,11 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { HeroMotion } from "@components/react/ui/molecules";
+import { HeroMotion, Navbar } from "@components/react/ui/molecules";
 import "../styles/index.css";
 ---
 
 <Layout title="Portafolio Diego Alexander Bello - TsukiiYamero">
 	<div class="relative">
+		<Navbar client:load />
 		<HeroMotion client:load />
 	</div>
 </Layout>

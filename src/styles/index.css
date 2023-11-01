@@ -41,6 +41,8 @@
     --subtitle-color: #9D9D9D;
     --text-color: #091833;
 
+    --color-icons: rgb(18, 18, 18);
+
 
     --font-size-super: 4.5rem;
     --font-size-sub-super: 2.5rem;
@@ -51,7 +53,17 @@
     --font-size-text: 1.5rem;
     --font-size-small: 1rem;
 
+    --icon-size-common: 1.75rem;
+    --icon-size-small: 1.25rem;
 
+    --bg-menu-white: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --icon-size-common: 2.125rem;
+        --icon-size-small: 1.75rem;
+    }
 }
 
 * {
@@ -80,4 +92,19 @@ body {
 
 ::-webkit-scrollbar-track {
     background: #050816;
+}
+
+.general-icon-color {
+    fill: var(--color-icons);
+    width: var(--icon-size-common);
+    height: var(--icon-size-common);
+}
+
+.general-icon-color path {
+    /* stroke: var(--color-icons); */
+    fill: var(--color-icons);
+}
+
+.bg-gradient-custom-1 {
+    background: -webkit-linear-gradient(-90.13deg, var(--main-color) 10%, #BCE4E7 40.5%, rgba(60, 51, 80, 0));
 }
