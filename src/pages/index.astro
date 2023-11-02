@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { HeroMotion, Navbar } from "@components/react/ui/molecules";
+import { AboutMotion } from "@components/react/ui/molecules/sections";
 import "../styles/index.css";
 ---
 
@@ -8,5 +9,6 @@ import "../styles/index.css";
 	<div class="relative">
 		<Navbar client:load />
 		<HeroMotion client:load />
+		<AboutMotion client:visible />
 	</div>
 </Layout>
