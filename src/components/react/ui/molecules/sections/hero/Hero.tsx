@@ -57,4 +57,4 @@ export const Hero = () => {
     )
 }
 
-export const HeroMotion = SectionWrapper(Hero, 'home');
+export const HeroMotion = SectionWrapper(Hero, itemsMenuIds.home);
