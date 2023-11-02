@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export const About = () => {
     return (
-        <main className="container-about grid pt-[80px] relative">
+        <main className="container-about grid pt-[30px] relative">
             <div className="square-custom relative bg-[--secondary-color] w-[94%] md:max-w-[660px] lg:max-w-[930px] left-[-24px] p-[24px] pb-[48px] sm:p-[38px] sm:pb-[84px] md:pt-[40px] md:px-[44px] md:pb-[92px] lg:px-[54px]">
                 <motion.div className="max-w-[486px] lg:max-w-[610px]">
                     <div className="relative">
