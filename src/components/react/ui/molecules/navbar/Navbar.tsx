@@ -70,21 +70,19 @@ export const Navbar = () => {
                             <img className="w-full" src="" alt="Img not found" />
                         </a>
 
-                        <MagicCard isCardExpanded={true}>
-                            <div className={`hidden md:flex`}>
-                                <ul className="font-menu-d items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-center font-medium">
-                                    {
-                                        itemsMenu.map((item, index) => (
-                                            <li key={index} onClick={() => goToSection(item.id)}>
-                                                <p className="text-[--title-color] text-[1.25rem] cursor-pointer">
-                                                    {item.title}
-                                                </p>
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                        </MagicCard>
+                        <div className={`hidden md:flex`}>
+                            <ul className="font-menu-d items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-center font-medium">
+                                {
+                                    itemsMenu.map((item, index) => (
+                                        <li key={index} onClick={() => goToSection(item.id)}>
+                                            <p className="text-[--title-color] text-[1.25rem] cursor-pointer">
+                                                {item.title}
+                                            </p>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
 
                         <div className="md:hidden" >
                             <Button onClick={() => setNavbar(!navbar)} className="outline-none p-2" isIconOnly size="sm" variant="flat">
