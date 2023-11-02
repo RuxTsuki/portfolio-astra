@@ -86,7 +86,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: -webkit-linear-gradient(-90.13deg, #915eff 1.9%, #ff4ecd 97.5%);
+    background: -webkit-linear-gradient(-90.13deg, var(--main-color) 1.9%, #ff4ecd 97.5%);
     border-radius: 12px;
 }
 
@@ -114,4 +114,11 @@ body {
     box-shadow: 0 2px 14px 0 rgba(31, 38, 135, .37);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+}
+
+.font-menu-d li p {
+    font-size: clamp(1rem, 1.55vw, 1.5rem);
+    cursor: pointer;
+    padding-inline: clamp(.4rem, 0.5vw, .8rem);
+    font-weight: 500;
 }
