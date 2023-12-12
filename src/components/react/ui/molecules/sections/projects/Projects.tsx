@@ -103,4 +103,4 @@ const Project = (data: itemList) => {
     )
 }
 
-export const ProjectMotion = SectionWrapper(Projects, itemsMenuIds.skills);
+export const ProjectMotion = SectionWrapper(Projects, itemsMenuIds.projects);
