@@ -6,4 +6,5 @@ export const itemsMenuIds = {
     projects: "projectsSection",
     skills: "skillsSection",
     contact: "contactSection",
+    experience: "experienceSection",
 }
