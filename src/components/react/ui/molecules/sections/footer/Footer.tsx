@@ -14,7 +14,7 @@ export const Footer = () => {
                     </div>
 
 
-                    <div className="flex justify-center">
+                    <div className="flex justify-center p-[10px]">
                         <p className="small-text-helper">
                             &copy; Copyright 2023. Todos los derechos reservados.
                         </p>
