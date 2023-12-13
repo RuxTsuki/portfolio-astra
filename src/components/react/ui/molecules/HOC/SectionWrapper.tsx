@@ -1,9 +1,15 @@
 import { motion } from 'framer-motion';
 import { styles } from '../../styles/stylesTilewind';
 import { staggerContainer } from '@components/utils/motions';
+import type { ComponentType, FC } from 'react';
 
-export const SectionWrapper = (Component: any, idName: any) => {
-    return function HOC() {
+type SectionWrapperProps = {
+    Component: ComponentType;
+    idName: string;
+}
+
+export const SectionWrapper = ({ Component, idName }: SectionWrapperProps) => {
+    return function Hoc() {
 
         return (
             <motion.section

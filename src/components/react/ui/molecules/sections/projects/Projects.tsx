@@ -2,7 +2,7 @@ import { itemsMenuIds } from "@components/utils/constant";
 import { SectionWrapper } from "../../HOC";
 import { motion } from 'framer-motion';
 import Marquee from "react-fast-marquee";
-import { Button, Card, CardBody, CardFooter, CardHeader, Image, Tooltip } from "@nextui-org/react";
+import { Button, Card, CardFooter, Image, Tooltip } from "@nextui-org/react";
 import ImageNiftyweb from '@assets/img/imageNiftyweb.webp';
 import ImageNiftytab from '@assets/img/imageNifttytab.webp';
 import Aphoridte from '@assets/img/aphrodite.webp';
@@ -49,14 +49,15 @@ const Projects = () => {
 
                 <div className="pt-[2.5rem]">
 
-                    <Marquee direction="left" speed={15} pauseOnHover pauseOnClick>
-                        <ul className="pt-[1.5rem] flex gap-[70px]">
+                    <Marquee speed={15} pauseOnHover pauseOnClick>
+                        {/* <ul className="pt-[1.5rem] flex gap-[70px]">
                             {
                                 list.map((item, index) => (
                                     <Project key={index} item={item} />
                                 ))
                             }
-                        </ul>
+                        </ul> */}
+                        <h1 className="text-[--title-color]">HOLA</h1>
                     </Marquee>
 
                 </div>
@@ -103,4 +104,4 @@ const Project = (data: itemList) => {
     )
 }
 
-export const ProjectMotion = SectionWrapper(Projects, itemsMenuIds.projects);
+export const ProjectMotion = SectionWrapper({ Component: Projects, idName: itemsMenuIds.projects });

@@ -110,4 +110,5 @@ const ExperienceItem = ({ experience, index }: { experience: any, index: number 
 }
 
 
-export const ExperienceMotion = SectionWrapper(Experience, itemsMenuIds.experience);
+export const ExperienceMotion = SectionWrapper({ Component: Experience, idName: itemsMenuIds.experience });
+

@@ -39,4 +39,4 @@ export const About = () => {
     )
 }
 
-export const AboutMotion = SectionWrapper(About, itemsMenuIds.about);
+export const AboutMotion = SectionWrapper({ Component: About, idName: itemsMenuIds.about });

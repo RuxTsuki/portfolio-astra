@@ -3,6 +3,7 @@ import { Navbar } from '../../navbar/Navbar'
 import { motion } from 'framer-motion';
 import ImageHero from '/src/assets/img/imgHero.png';
 import { basePath, itemsMenuIds } from '@components/utils/constant';
+import type { FC } from 'react';
 
 export const Hero = () => {
     return (
@@ -57,4 +58,4 @@ export const Hero = () => {
     )
 }
 
-export const HeroMotion = SectionWrapper(Hero, itemsMenuIds.home);
+export const HeroMotion = SectionWrapper({ Component: Hero, idName: itemsMenuIds.home })

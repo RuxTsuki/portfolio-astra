@@ -88,4 +88,4 @@ const Skills = () => {
     )
 }
 
-export const SkillsMotion = SectionWrapper(Skills, itemsMenuIds.skills);
+export const SkillsMotion = SectionWrapper({ Component: Skills, idName: itemsMenuIds.skills });
