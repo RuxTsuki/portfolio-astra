@@ -1,4 +1,4 @@
-export const basePath = ""
+export const basePath = "portfolio-astra";
 
 export const itemsMenuIds = {
     home: "homeSection",
