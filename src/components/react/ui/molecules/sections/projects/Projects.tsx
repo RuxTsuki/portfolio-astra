@@ -1,7 +1,6 @@
 import { itemsMenuIds } from "@components/utils/constant";
 import { SectionWrapper } from "../../HOC";
 import { motion } from 'framer-motion';
-import Marquee from "react-fast-marquee";
 import { Button, Card, CardFooter, Image, Tooltip } from "@nextui-org/react";
 import ImageNiftyweb from '@assets/img/imageNiftyweb.webp';
 import ImageNiftytab from '@assets/img/imageNifttytab.webp';
@@ -49,16 +48,14 @@ const Projects = () => {
 
                 <div className="pt-[2.5rem]">
 
-                    <Marquee speed={15} pauseOnHover pauseOnClick>
-                        {/* <ul className="pt-[1.5rem] flex gap-[70px]">
-                            {
-                                list.map((item, index) => (
-                                    <Project key={index} item={item} />
-                                ))
-                            }
-                        </ul> */}
-                        <h1 className="text-[--title-color]">HOLA</h1>
-                    </Marquee>
+                    <ul className="pt-[1.5rem] flex gap-[70px]">
+                        {
+                            list.map((item, index) => (
+                                <Project key={index} item={item} />
+                            ))
+                        }
+                    </ul>
+
 
                 </div>
 
