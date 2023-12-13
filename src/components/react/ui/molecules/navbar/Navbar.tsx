@@ -17,7 +17,7 @@ export const Navbar = () => {
     const goToSection = (id: string) => {
         setNavbar(false);
 
-        window.location.href = (`${basePath}/#${id}`);
+        window.location.href = (`/${basePath}/#${id}`);
         const element = document.getElementById(id);
 
         if (element) {
