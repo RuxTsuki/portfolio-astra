@@ -14,8 +14,12 @@ export const Footer = () => {
                     </div>
 
 
-                    <div className="flex justify-center p-[10px]">
-                        <p className="small-text-helper">
+                    <div className="grid justify-center p-[10px]">
+                        <p className="text-center small-text-helper">
+                            Desarrollador web | Diego Alexander Guatibonza Bello | TsukiiYamero
+                        </p>
+
+                        <p className="text-center small-text-helper">
                             &copy; Copyright 2023. Todos los derechos reservados.
                         </p>
                     </div>
