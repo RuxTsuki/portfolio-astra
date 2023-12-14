@@ -1,9 +1,14 @@
 ---
+import { injectSpeedInsights } from "@vercel/speed-insights";
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
+
+injectSpeedInsights({
+	framework: "astro",
+});
 ---
 
 <!doctype html>
