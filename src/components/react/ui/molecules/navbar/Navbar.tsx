@@ -54,8 +54,8 @@ export const Navbar = () => {
             <nav className={`${sticky ? 'nav-menu ' : ''}w-full fixed z-[15]`}>
                 <div className="relative z-20">
                     <div className="container mx-auto relative z-[21] flex justify-between items-center py-3 px-3">
-                        <a className="w-[60px] h-[60px]">
-                            <Image className="w-full" src={ImageSvg.src} alt="Logo TsukiiYamero" />
+                        <a aria-label="link to home" href={"#homeSection"} className="w-[60px] h-[60px]">
+                            <Image className="w-full" src={ImageSvg.src} alt="Logo de la marca de TsukiiYamero" />
                         </a>
 
                         <div className={`hidden md:flex`}>

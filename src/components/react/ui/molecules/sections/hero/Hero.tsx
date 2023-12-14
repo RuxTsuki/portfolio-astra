@@ -36,7 +36,7 @@ export const Hero = () => {
             </div>
 
             <div className='relative pt-[7.5rem] lg:pt-[12.5rem] gotodown w-full flex justify-center items-center'>
-                <a href={`${basePath}/#${itemsMenuIds.about}`}>
+                <a aria-label="link to dynamic section" href={`#${itemsMenuIds.about}`}>
                     <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
                         <motion.div animate={{
                             y: [0, 24, 0]
