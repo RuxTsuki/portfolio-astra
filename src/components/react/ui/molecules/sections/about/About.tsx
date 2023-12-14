@@ -1,7 +1,7 @@
 import { itemsMenuIds } from "@components/utils/constant";
 import { SectionWrapper } from "../../HOC";
 
-import ImgAbout from '/src/assets/img/imgAbout.png';
+import ImgAbout from '/src/assets/img/imgAbout.webp';
 import { motion } from 'framer-motion';
 
 export const About = () => {
