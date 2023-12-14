@@ -1,6 +1,6 @@
 import { SectionWrapper } from '@components/react/ui/molecules/HOC';
 import { motion } from 'framer-motion';
-import ImageHero from '/src/assets/img/imgHero.png';
+import ImageHero from '/src/assets/img/imgHero.webp';
 import { basePath, itemsMenuIds } from '@components/utils/constant';
 
 export const Hero = () => {
