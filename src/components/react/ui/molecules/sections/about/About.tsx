@@ -10,7 +10,7 @@ export const About = () => {
             <div className="square-custom relative bg-[--secondary-color] w-[94%] md:max-w-[660px] lg:max-w-[930px] left-[-24px] p-[24px] pb-[48px] sm:p-[38px] sm:pb-[84px] md:pt-[40px] md:px-[44px] md:pb-[92px] lg:px-[54px]">
                 <motion.div className="max-w-[486px] lg:max-w-[610px]">
                     <div className="relative">
-                        <p className={`section-sub-text relative left-[-12px]`}>Introduccion</p>
+                        <p className={`section-sub-text relative left-[-12px]`}>Introducción</p>
                         <h2 className={`section-head-text`}>Acerca de mi 🙌</h2>
                     </div>
 
@@ -31,7 +31,7 @@ export const About = () => {
 
                 <div className="grid justify-end sm:absolute sm:right-[-48px] sm:top-[266px] md:right-[-92px] md:top-[268px] xl:right-[-140px]">
                     <div className="w-[309px] h-[235px] md:w-[360px] md:h-[308px] xl:w-[508px] xl:h-[386px] relative">
-                        <img src={ImgAbout.src} alt="Person with a laptop coding" />
+                        <img src={ImgAbout.src} alt="Diego Alexander Bello with a laptop coding" />
                     </div>
                 </div>
             </div>

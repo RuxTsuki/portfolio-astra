@@ -1,10 +1,11 @@
-import { Button } from "@nextui-org/react";
+import { Button, Image } from "@nextui-org/react";
 import { MenuIcon, CloseIcon } from "../../atoms/icons";
 import { useEffect, useState } from "react";
 /* import { useNavigate } from "react-router-dom"; */
 import { basePath, itemsMenuIds } from "@components/utils/constant";
 import { NavbarMobile } from "./NavbarMobile";
 import { useScrollOnTop } from "./useScrollOnTop";
+import ImageSvg from '@assets/svg/tsukiilogo48.svg';
 
 
 const { about, home, skills, projects, contact } = itemsMenuIds;
@@ -17,7 +18,7 @@ export const Navbar = () => {
     const goToSection = (id: string) => {
         setNavbar(false);
 
-        window.location.href = (`/${basePath}/#${id}`);
+        window.location.href = (`${basePath}/#${id}`);
         const element = document.getElementById(id);
 
         if (element) {
@@ -54,7 +55,7 @@ export const Navbar = () => {
                 <div className="relative z-20">
                     <div className="container mx-auto relative z-[21] flex justify-between items-center py-3 px-3">
                         <a className="w-[60px] h-[60px]">
-                            <img className="w-full" src="" alt="Img not found" />
+                            <Image className="w-full" src={ImageSvg.src} alt="Logo TsukiiYamero" />
                         </a>
 
                         <div className={`hidden md:flex`}>
