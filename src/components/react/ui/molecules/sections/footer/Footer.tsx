@@ -1,3 +1,4 @@
+import { SocialLinks } from "@components/react/ui/atoms/social_links"
 
 export const Footer = () => {
     return (
@@ -10,6 +11,11 @@ export const Footer = () => {
                         <h3 className="text-[#fff] text-[2rem] font-bold">
                             En construccion 🚧
                         </h3>
+
+                        <div className="flex justify-center gap-4">
+                            <h4 className="text-[#fff]">Mis Redes</h4>
+                            <SocialLinks />
+                        </div>
 
                     </div>
 
