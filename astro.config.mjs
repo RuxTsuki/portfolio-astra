@@ -6,7 +6,15 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), sitemap()],
+  integrations: [tailwind(), react(), sitemap({
+    i18n: {
+      defaultLocale: 'es',
+      locales: {
+        en: 'en-US',
+        es: 'es-ES',
+      }
+    }
+  })],
   site: 'https://tsukiiyamero.xyz',
   /*   adapter: vercel({
       webAnalytics: {

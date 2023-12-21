@@ -1,7 +1,9 @@
 import { SectionWrapper } from '@components/react/ui/molecules/HOC';
 import { motion } from 'framer-motion';
 import ImageHero from '/src/assets/img/imgHero.webp';
-import { basePath, itemsMenuIds } from '@components/utils/constant';
+import { itemsMenuIds } from '@components/utils/constant';
+import { SocialLinks } from '@components/react/ui/atoms/social_links';
+
 
 export const Hero = () => {
     return (
@@ -22,6 +24,10 @@ export const Hero = () => {
                         <p className={`text-[#3C4859] lg:text-[1.5rem] font-[700] xs:text-[1.125rem] md:text-[26px] text-[1.125rem] lg:leading-[40px] mt-6`}>
                             <span className='text-[--main-color]'>Front-end</span> Developer
                         </p>
+
+                        <div className='flex gap-[0.75rem] mt-[1rem] md:gap-[1rem]'>
+                            <SocialLinks />
+                        </div>
                     </div>
 
                 </div>
@@ -37,7 +43,7 @@ export const Hero = () => {
 
             <div className='relative pt-[7.5rem] lg:pt-[12.5rem] gotodown w-full flex justify-center items-center'>
                 <a aria-label="link to dynamic section" href={`#${itemsMenuIds.about}`}>
-                    <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+                    <div className='w-[35px] h-[64px] rounded-3xl border-4 flex justify-center items-start p-2'>
                         <motion.div animate={{
                             y: [0, 24, 0]
                         }}
