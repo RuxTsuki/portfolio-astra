@@ -16,6 +16,9 @@ export const Footer = () => {
 
                     <div className="grid justify-center p-[10px]">
                         <p className="text-center small-text-helper">
+                            Portfolio Diego Bello
+                        </p>
+                        <p className="text-center small-text-helper">
                             Desarrollador web | Diego Alexander Guatibonza Bello | TsukiiYamero
                         </p>
 
