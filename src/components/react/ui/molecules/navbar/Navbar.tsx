@@ -63,7 +63,7 @@ export const Navbar = () => {
                                 {
                                     itemsMenu.map((item, index) => (
                                         <li key={index} onClick={() => goToSection(item.id)}>
-                                            <p className="text-[--title-color] text-[1.25rem] cursor-pointer">
+                                            <p className="text-[--title-color] text-[1.25rem] hover:text-[--main-color] cursor-pointer">
                                                 {item.title}
                                             </p>
                                         </li>
