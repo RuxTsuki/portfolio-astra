@@ -1,12 +1,9 @@
 import { SectionWrapper } from '@components/react/ui/molecules/HOC';
 import { motion } from 'framer-motion';
 import ImageHero from '/src/assets/img/imgHero.webp';
-import { itemsMenuIds, socialLinks } from '@components/utils/constant';
-import { DiscordNSvg, LinkedinNSvg, WhatsappNSvg } from '@components/react/ui/atoms';
-import { Link } from '@nextui-org/react';
-import { Tooltip } from "@nextui-org/react";
+import { itemsMenuIds } from '@components/utils/constant';
+import { SocialLinks } from '@components/react/ui/atoms/social_links';
 
-const { discord, linkedin, whatsapp } = socialLinks;
 
 export const Hero = () => {
     return (
@@ -29,27 +26,7 @@ export const Hero = () => {
                         </p>
 
                         <div className='flex gap-[0.75rem] mt-[1rem] md:gap-[1rem]'>
-                            <Tooltip content='Visita mi Linkedin'>
-                                <Link aria-label='link to my linkedin' href={linkedin} target='_blank'>
-                                    <LinkedinNSvg className='w-[32px] h-[32px] md:w-[42px] md:h-[42px] fill-[--title-color] hover:fill-[--main-color]' />
-                                </Link>
-                            </Tooltip>
-
-                            <Tooltip content='Encuentrame en Discord'>
-                                <Link aria-label='link to my discord' href={discord} target='_blank'>
-                                    <DiscordNSvg className='w-[32px] h-[32px] md:w-[42px] md:h-[42px] fill-[--title-color] hover:fill-[--main-color]' />
-                                </Link>
-
-                            </Tooltip>
-
-                            <Tooltip content='Escribeme por Whatsapp'>
-                                <button aria-label='link to my whatsapp' onClick={() => window.open(whatsapp, '_blank')}>
-                                    <WhatsappNSvg className='w-[32px] h-[32px] md:w-[42px] md:h-[42px] fill-[--title-color] hover:fill-[--main-color]' />
-                                </button>
-                            </Tooltip>
-
-
-
+                            <SocialLinks />
                         </div>
                     </div>
 
@@ -66,7 +43,7 @@ export const Hero = () => {
 
             <div className='relative pt-[7.5rem] lg:pt-[12.5rem] gotodown w-full flex justify-center items-center'>
                 <a aria-label="link to dynamic section" href={`#${itemsMenuIds.about}`}>
-                    <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+                    <div className='w-[35px] h-[64px] rounded-3xl border-4 flex justify-center items-start p-2'>
                         <motion.div animate={{
                             y: [0, 24, 0]
                         }}
