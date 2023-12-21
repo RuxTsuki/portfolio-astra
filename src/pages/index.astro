@@ -9,18 +9,21 @@ import {
 	ProjectMotion,
 } from "@components/react/ui/molecules/sections";
 import { Footer } from "@components/react/ui/molecules/sections/footer/Footer";
+import { NextUIProvider } from "@nextui-org/react";
 ---
 
 <Layout
 	title="Portafolio Diego Bello - TsukiiYamero | Portfolio Diego Bello Front-end Developer"
 >
-	<div class="relative">
-		<Navbar client:load />
-		<HeroMotion client:load />
-		<AboutMotion client:visible />
-		<SkillsMotion client:visible />
-		<ExperienceMotion client:visible />
-		<ProjectMotion client:visible />
-		<Footer client:load />
-	</div>
+	<NextUIProvider client:load>
+		<div class="relative light">
+			<Navbar client:load />
+			<HeroMotion client:load />
+			<AboutMotion client:visible />
+			<SkillsMotion client:visible />
+			<ExperienceMotion client:visible />
+			<ProjectMotion client:visible />
+			<Footer />
+		</div>
+	</NextUIProvider>
 </Layout>
