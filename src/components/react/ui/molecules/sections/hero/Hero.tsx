@@ -1,7 +1,12 @@
 import { SectionWrapper } from '@components/react/ui/molecules/HOC';
 import { motion } from 'framer-motion';
 import ImageHero from '/src/assets/img/imgHero.webp';
-import { basePath, itemsMenuIds } from '@components/utils/constant';
+import { itemsMenuIds, socialLinks } from '@components/utils/constant';
+import { DiscordNSvg, LinkedinNSvg, WhatsappNSvg } from '@components/react/ui/atoms';
+import { Link } from '@nextui-org/react';
+import { Tooltip } from "@nextui-org/react";
+
+const { discord, linkedin, whatsapp } = socialLinks;
 
 export const Hero = () => {
     return (
@@ -22,6 +27,30 @@ export const Hero = () => {
                         <p className={`text-[#3C4859] lg:text-[1.5rem] font-[700] xs:text-[1.125rem] md:text-[26px] text-[1.125rem] lg:leading-[40px] mt-6`}>
                             <span className='text-[--main-color]'>Front-end</span> Developer
                         </p>
+
+                        <div className='flex gap-[0.75rem] mt-[1rem] md:gap-[1rem]'>
+                            <Tooltip content='Visita mi Linkedin'>
+                                <Link aria-label='link to my linkedin' href={linkedin} target='_blank'>
+                                    <LinkedinNSvg className='w-[32px] h-[32px] md:w-[42px] md:h-[42px] fill-[--title-color] hover:fill-[--main-color]' />
+                                </Link>
+                            </Tooltip>
+
+                            <Tooltip content='Encuentrame en Discord'>
+                                <Link aria-label='link to my discord' href={discord} target='_blank'>
+                                    <DiscordNSvg className='w-[32px] h-[32px] md:w-[42px] md:h-[42px] fill-[--title-color] hover:fill-[--main-color]' />
+                                </Link>
+
+                            </Tooltip>
+
+                            <Tooltip content='Escribeme por Whatsapp'>
+                                <button aria-label='link to my whatsapp' onClick={() => window.open(whatsapp, '_blank')}>
+                                    <WhatsappNSvg className='w-[32px] h-[32px] md:w-[42px] md:h-[42px] fill-[--title-color] hover:fill-[--main-color]' />
+                                </button>
+                            </Tooltip>
+
+
+
+                        </div>
                     </div>
 
                 </div>
